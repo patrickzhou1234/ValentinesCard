@@ -1,0 +1,87 @@
+body {
+    background-color: black;
+    overflow-y: hidden;
+}
+
+@font-face {
+    font-family: 'amazon-ember';
+    src: URL('Amazon-Ember-Medium.ttf') format('truetype');
+}
+
+.animtxt {
+    font-size: calc(2vw + 2vh);
+    display: none;
+    font-family: 'amazon-ember';
+    color: pink;
+    text-align: center;
+}
+
+.heart {
+    width: 5vh;
+    height: 5vh;
+    position: absolute;
+}
+
+#heart1 {
+    top: 0px;
+    left: 0px;
+}
+
+#heart2 {
+    top: 90vh;
+    left: 0px;
+}
+
+#heart3 {
+    top: 90vh;
+    left: calc(100vw - 10vh);
+}
+
+#heart4 {
+    top: 0px;
+    left: calc(100vw - 10vh);
+}
+
+#sun {
+    width: 20vh;
+    height: 20vh;
+    position: absolute;
+    left: 0vw;
+    top: 100vh;
+}
+
+.backgroundanim {
+    animation: backgroundanim ease 3s forwards;
+}
+
+@keyframes backgroundanim {
+    0% {background-color: black;}
+    100% {background-color: #508CC2;}
+}
+
+#lastmsg {
+    font-size: calc(2vw + 2vh);
+    display: none;
+    font-family: 'amazon-ember';
+    color: pink;
+    margin: 0;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#face {
+    width: 20vh;
+    height: 20vh;
+    border-radius: 50%;
+    display: none;
+    position: absolute;
+    animation: faceanim 4s ease infinite;
+}
+
+@keyframes faceanim {
+    0% {left: 0vw}
+    50% {left: calc(100vw - 20vh)}
+    100% {left: 0vw}
+}
