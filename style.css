@@ -85,3 +85,18 @@ body {
     50% {left: calc(100vw - 20vh)}
     100% {left: 0vw}
 }
+
+#face1 {
+    width: 20vh;
+    height: 20vh;
+    border-radius: 50%;
+    display: none;
+    position: absolute;
+    animation: faceanim1 4s ease infinite;
+}
+
+@keyframes faceanim1 {
+    0% {left: calc(100vw - 20vh)}
+    50% {left: 0vw}
+    100% {left: calc(100vw - 20vh)}
+}

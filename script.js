@@ -30,4 +30,5 @@ setTimeout(() => {
     document.body.classList.add("backgroundanim");
     $("#lastmsg").fadeIn("slow");
     $("#face").fadeIn("slow");
+    $("#face1").fadeIn("slow");
 }, 5000);
